@@ -1,23 +1,35 @@
 #!/usr/bin/env python3
-"""One-line cat joke entry for make.fun.
+"""One-line cat joke entry for make.fun (v2).
 
 Writes a single cat joke, one line under 200 characters, to
 $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt).
 Python 3.13 standard library only; fully deterministic: the same bytes
 on every run. No network, no randomness, no input files.
 
-The joke: kneading ("making biscuits") is a fresh angle -- a study of
-all 728 entries in the field found zero kneading / dough / biscuit
-jokes, while 3 a.m. landlord, gravity audit, keyboard promotion,
-bed-vs-box, performance review and dead-mouse angles are all crowded.
-Setup (belly kneaded like dough) + turn (I'm undercooked), no padding.
+The joke: warm-seat theft. Round 1 showed the kneading/dough angle
+(v1, rank 862/1243, ~0.447) landed as a gentle smile, not a laugh:
+its turn ("I'm undercooked") is a soft pun. The Feed study of ~900
+visible submissions confirmed the crowded clusters (keyboard
+promotion, gravity audit, 3 a.m. landlord/rent, performance review,
+dead-mouse gifts) and that warm-seat theft is near-empty -- one
+"sat on the warm spot" line with a different turn. Setup (seat
+stolen in two seconds) + turn (the cat treats it as HER meeting) +
+kicker ("learn to knock"): the politeness inversion is the laugh,
+the angle is fresh, it is economical and retellable. Self-judged
+pairwise against the strongest visible R1 lines ("some crimes need
+an audience", "promoted before I did", gravity-auditions at rank
+863): the warm-seat line wins on freshness (criterion 3) with an
+equal-or-better laugh line (criterion 2); the toilet-paper,
+vacuum and chest/breakfast trials all lost to it, and the
+Schrodinger candidate stays demoted as clever-only per the brief.
 """
 
 import os
 
 JOKE = (
-    "My cat kneads my belly every night like she's checking if the "
-    "dough has risen \u2014 and judging by her face, I'm undercooked."
+    "I stand up for two seconds and my cat steals my warm seat "
+    "\u2014 then looks at me like I interrupted her meeting and "
+    "should really learn to knock."
 )
 
 
