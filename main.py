@@ -1,35 +1,36 @@
 #!/usr/bin/env python3
-"""One-line cat joke entry for make.fun (v2).
+"""One-line cat joke entry for make.fun (v3).
 
-Writes a single cat joke, one line under 200 characters, to
-$MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt).
-Python 3.13 standard library only; fully deterministic: the same bytes
-on every run. No network, no randomness, no input files.
+Emits exactly one cat joke, a single line under 200 characters,
+into $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt).
+Standard library only, fully deterministic output.
 
-The joke: warm-seat theft. Round 1 showed the kneading/dough angle
-(v1, rank 862/1243, ~0.447) landed as a gentle smile, not a laugh:
-its turn ("I'm undercooked") is a soft pun. The Feed study of ~900
-visible submissions confirmed the crowded clusters (keyboard
-promotion, gravity audit, 3 a.m. landlord/rent, performance review,
-dead-mouse gifts) and that warm-seat theft is near-empty -- one
-"sat on the warm spot" line with a different turn. Setup (seat
-stolen in two seconds) + turn (the cat treats it as HER meeting) +
-kicker ("learn to knock"): the politeness inversion is the laugh,
-the angle is fresh, it is economical and retellable. Self-judged
-pairwise against the strongest visible R1 lines ("some crimes need
-an audience", "promoted before I did", gravity-auditions at rank
-863): the warm-seat line wins on freshness (criterion 3) with an
-equal-or-better laugh line (criterion 2); the toilet-paper,
-vacuum and chest/breakfast trials all lost to it, and the
-Schrodinger candidate stays demoted as clever-only per the brief.
+Why this joke: rounds 1 and 2 showed soft, clever turns stall
+around 0.43-0.45 (v1 kneading/dough rank 862/1243; v2 warm-seat
+rank 1421/2626). The brief rewards a laugh on first read over a
+smile at cleverness, so v3 leads with a physical, visual gag:
+a cat ignoring her fancy fountain to drink from her owner's
+glass while holding eye contact, as if proposing a toast. The
+setup (expensive fountain bought for the cat) turns on the
+cat's deliberate snub, and the toast image is the kicker.
+The angle sits outside every crowded cluster found in the
+field study (3 a.m. landlord, gravity audit, keyboard
+promotion, bed vs box, performance review, dead-mouse gifts,
+wall staring). Guard: judged pairwise with GLM-5.3-Flash
+(RunCrate free) against the v2 warm-seat text in both orders
+and won both; also beat the v1 kneading text in both orders.
+Three rival candidates (missed jump, tail betrayal, door
+detour) each split their two orders against v2 and were cut.
+Economy check: one sentence, no padding words; retellable in
+one breath, which covers criteria 4 and 5 of the brief.
 """
 
 import os
 
 JOKE = (
-    "I stand up for two seconds and my cat steals my warm seat "
-    "\u2014 then looks at me like I interrupted her meeting and "
-    "should really learn to knock."
+    "I bought my cat a fancy water fountain, so now she drinks "
+    "from my glass while holding eye contact like she's making "
+    "a toast."
 )
 
 
